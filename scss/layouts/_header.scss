@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Crochet';
+    src: url('../Crochet/Crochet.otf'),
+    url('../Crochet/Crochet.eot')format('embedded-opentype');
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    background: url(../images/banner1.jpg) no-repeat -0px -0px;;
+    background-size: cover;
+    height: 528px;
+    width: 100vw;
+
+    .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    h1{
+        color: #8a6f3f;
+        font-size: 3rem;
+        font-family: 'Crochet';
+        
+
+    }
+    p{
+        color: white;
+        font-size: 0.9rem;
+        font-family: 'Averia Serif Libre', cursive;
+        
+    }
+    .naranja{
+        color: #8a6f3f;
+        font-family: 'Averia Serif Libre', cursive;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .flechaSiguiente{
+        padding-top: 8vh;
+        color: white;
+        font-weight: 100;
+    }
+    
+}

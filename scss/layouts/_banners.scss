@@ -1,0 +1,153 @@
+
+.quienesSomos{
+    padding: 0;
+    margin: 0;
+    background: url(../images/banner2.jpg);
+    background-size: cover;
+    height: 526px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .container{
+        width: 40vw;
+        height: 45vh;
+        background-color: #ffffff;
+        margin-right: 0;
+        
+
+        h3{
+            text-transform: uppercase;
+            margin-left: 5vw;
+            padding-left: 2vw;
+            padding-top: 5vh;
+            margin-bottom: 5vh;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 3px;
+            font-size: 1.7rem;            
+            color: black;
+            border-bottom: #8d3c05 solid 1px;
+            width: 17vw;
+        }
+
+        p{
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            font-size: 0.9rem;
+            font-weight: 300;
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+
+    
+}
+
+.nuestroEstilo{
+    padding: 0;
+    margin: 0;
+    background: url(../images/banner3.jpg);
+    background-size: cover;
+    height: 530px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .container{
+        width: 40vw;
+        height: 48vh;
+        background-color: #ffffff;
+        margin-left: 0;
+        
+
+        h3{
+            text-transform: uppercase;
+            margin-left: 5vw;
+            padding-left: 2vw;
+            padding-top: 9vh;
+            margin-bottom: 5vh;
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 3px;
+            font-size: 1.7rem;            
+            color: black;
+            border-bottom: #8d3c05 solid 1px;
+            width: 17vw;
+        }
+
+        p{
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            font-size: 0.9rem;
+            font-weight: 300;
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+    
+}
+
+.contactate{
+    padding: 0;
+    margin: 0;
+    background: url(../images/banner4.jpg);
+    background-size: cover;
+    height: 528px;
+    width: 100vw;    
+    
+        .container{
+            width: 42vw;
+            height: 30vh;
+            color: #ffffff;
+    
+            h3{
+                padding-top: 6vh;
+                text-transform: uppercase;            
+                font-family: 'Bebas Neue', cursive;
+                letter-spacing: 3px;
+                font-size: 1.7rem;
+                border-bottom: #8a6f3f solid 3px;
+                width: 22vw;
+                text-align: center;
+            }
+    
+            p{
+                padding-left: 1.5vw;
+                padding-right: 1.5vw;
+                font-size: 0.9rem;
+                font-weight: 300;
+                text-align: center;
+                
+            }
+        }
+    
+    .formulario{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 50vh;
+        width: 40vw;
+
+        textarea{
+            width: 40vw;
+            
+        }
+
+        button{
+            background-color: #9c855d;
+            border: #9c855d;
+            width: 140px;
+            border-radius: 8px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5rem;
+            font-weight: lighter;
+        }
+        button:hover{
+            background-color: #c0b7a8;
+        }
+    }
+   
+
+    
+}

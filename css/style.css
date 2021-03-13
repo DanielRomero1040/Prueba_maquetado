@@ -1,0 +1,443 @@
+/*Imports*/
+@font-face {
+  font-family: 'Crochet';
+  src: url("../Crochet/Crochet.otf"), url("../Crochet/Crochet.eot") format("embedded-opentype"); }
+
+header {
+  padding: 0;
+  margin: 0;
+  background: url(../images/banner1.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  height: 528px;
+  width: 100vw; }
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  header h1 {
+    color: #8a6f3f;
+    font-size: 3rem;
+    font-family: 'Crochet'; }
+  header p {
+    color: white;
+    font-size: 0.9rem;
+    font-family: 'Averia Serif Libre', cursive; }
+  header .naranja {
+    color: #8a6f3f;
+    font-family: 'Averia Serif Libre', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3rem; }
+  header .flechaSiguiente {
+    padding-top: 8vh;
+    color: white;
+    font-weight: 100; }
+
+.quienesSomos {
+  padding: 0;
+  margin: 0;
+  background: url(../images/banner2.jpg);
+  background-size: cover;
+  height: 526px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .quienesSomos .container {
+    width: 40vw;
+    height: 45vh;
+    background-color: #ffffff;
+    margin-right: 0; }
+    .quienesSomos .container h3 {
+      text-transform: uppercase;
+      margin-left: 5vw;
+      padding-left: 2vw;
+      padding-top: 5vh;
+      margin-bottom: 5vh;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 3px;
+      font-size: 1.7rem;
+      color: black;
+      border-bottom: #8d3c05 solid 1px;
+      width: 17vw; }
+    .quienesSomos .container p {
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+      font-size: 0.9rem;
+      font-weight: 300; }
+      .quienesSomos .container p span {
+        font-weight: 400; }
+
+.nuestroEstilo {
+  padding: 0;
+  margin: 0;
+  background: url(../images/banner3.jpg);
+  background-size: cover;
+  height: 530px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .nuestroEstilo .container {
+    width: 40vw;
+    height: 48vh;
+    background-color: #ffffff;
+    margin-left: 0; }
+    .nuestroEstilo .container h3 {
+      text-transform: uppercase;
+      margin-left: 5vw;
+      padding-left: 2vw;
+      padding-top: 9vh;
+      margin-bottom: 5vh;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 3px;
+      font-size: 1.7rem;
+      color: black;
+      border-bottom: #8d3c05 solid 1px;
+      width: 17vw; }
+    .nuestroEstilo .container p {
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+      font-size: 0.9rem;
+      font-weight: 300; }
+      .nuestroEstilo .container p span {
+        font-weight: 500; }
+
+.contactate {
+  padding: 0;
+  margin: 0;
+  background: url(../images/banner4.jpg);
+  background-size: cover;
+  height: 528px;
+  width: 100vw; }
+  .contactate .container {
+    width: 42vw;
+    height: 30vh;
+    color: #ffffff; }
+    .contactate .container h3 {
+      padding-top: 6vh;
+      text-transform: uppercase;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 3px;
+      font-size: 1.7rem;
+      border-bottom: #8a6f3f solid 3px;
+      width: 22vw;
+      text-align: center; }
+    .contactate .container p {
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-align: center; }
+  .contactate .formulario {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50vh;
+    width: 40vw; }
+    .contactate .formulario textarea {
+      width: 40vw; }
+    .contactate .formulario button {
+      background-color: #9c855d;
+      border: #9c855d;
+      width: 140px;
+      border-radius: 8px;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.5rem;
+      font-weight: lighter; }
+    .contactate .formulario button:hover {
+      background-color: #c0b7a8; }
+
+.galeria {
+  height: 180vh;
+  background-color: black; }
+  .galeria .container {
+    width: 42vw;
+    height: 30vh;
+    color: #ffffff; }
+    .galeria .container h3 {
+      padding-top: 20vh;
+      text-transform: uppercase;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 3px;
+      font-size: 1.7rem;
+      border-bottom: #8a6f3f solid 3px;
+      width: 22vw;
+      text-align: center; }
+    .galeria .container p {
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-align: center; }
+  .galeria .galeria__fotos {
+    padding-top: 20vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr,2fr;
+    grid-template-columns: 2fr,2fr;
+    grid-template-rows: repeat(3, 2fr);
+    grid-gap: 0;
+    grid-template-areas: "img1   img2" "img3   img4" "img5   img6";
+    width: 60vw;
+    height: fit-content; }
+    .galeria .galeria__fotos .sprite-galeria_1 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: img1;
+      width: 28vw;
+      height: 34vh;
+      background: url(../images/galeria_1.jpg) no-repeat;
+      background-size: contain; }
+    .galeria .galeria__fotos .sprite-galeria_2 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      grid-area: img2;
+      width: 28vw;
+      height: 34vh;
+      background: url(../images/galeria_2.jpg) no-repeat;
+      background-size: contain; }
+    .galeria .galeria__fotos .sprite-galeria_3 {
+      -ms-grid-row: 2;
+      -ms-grid-column: 1;
+      grid-area: img3;
+      width: 28vw;
+      height: 34vh;
+      background: url(../images/galeria_3.jpg) no-repeat;
+      background-size: contain; }
+    .galeria .galeria__fotos .sprite-galeria_4 {
+      -ms-grid-row: 2;
+      -ms-grid-column: 2;
+      grid-area: img4;
+      width: 28vw;
+      height: 34vh;
+      background: url(../images/galeria_4.jpg) no-repeat;
+      background-size: contain; }
+    .galeria .galeria__fotos .sprite-galeria_5 {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+      grid-area: img5;
+      width: 28vw;
+      height: 34vh;
+      background: url(../images/galeria_5.jpg) no-repeat;
+      background-size: contain; }
+    .galeria .galeria__fotos .sprite-galeria_6 {
+      -ms-grid-row: 3;
+      -ms-grid-column: 2;
+      grid-area: img6;
+      width: 28vw;
+      height: 34vh;
+      background: url(../images/galeria_6.jpg) no-repeat;
+      background-size: contain; }
+  .galeria .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden; }
+  .galeria .overlay.active {
+    visibility: visible; }
+  .galeria .popup {
+    width: 700px;
+    height: 394px;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: 0.5s ease all; }
+    .galeria .popup div.imagen {
+      width: 700px;
+      height: 394px; }
+      .galeria .popup div.imagen .btn-cerrar-popup {
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-end;
+        color: gray;
+        transition: .3s ease all;
+        text-decoration: none; }
+        .galeria .popup div.imagen .btn-cerrar-popup i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          margin-top: 5px;
+          margin-right: 5px;
+          padding: 5px;
+          width: 20px;
+          height: 20px; }
+      .galeria .popup div.imagen .btn-cerrar-popup:hover {
+        color: black; }
+      .galeria .popup div.imagen .cambioDeFoto {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20vh 10px; }
+        .galeria .popup div.imagen .cambioDeFoto #btn-anterior, .galeria .popup div.imagen .cambioDeFoto #btn-siguiente {
+          font-size: 50px;
+          opacity: 0.7;
+          color: #1a1102; }
+        .galeria .popup div.imagen .cambioDeFoto #btn-anterior:hover, .galeria .popup div.imagen .cambioDeFoto #btn-siguiente:hover {
+          color: #7a5e28; }
+    .galeria .popup .texto {
+      background: rgba(0, 0, 0, 0.7);
+      padding-left: 6px;
+      padding-top: 4px;
+      font-size: 15px;
+      color: white; }
+  .galeria .popup.active {
+    opacity: 1;
+    transform: scale(1); }
+
+footer {
+  height: 30vh;
+  background-color: black;
+  font-family: 'Bebas Neue', cursive; }
+  footer p {
+    color: #ada9a9;
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 0; }
+  footer a {
+    color: #9c855d;
+    padding: 0 0.5vw;
+    font-size: 0.9rem; }
+  footer a:hover {
+    color: #9c855d;
+    padding: 0 0.5vw;
+    font-size: 0.9rem; }
+
+.footer__redes {
+  width: 50vw; }
+  .footer__redes .fab {
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+    color: #9c855d;
+    padding: 0 1.5vw;
+    padding-bottom: 5vh; }
+
+@media (max-width: 991.98px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180vh;
+    background-color: black; }
+    .galeria .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 30vh;
+      color: #ffffff; }
+      .galeria .container h3 {
+        padding-top: 20vh;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        font-size: 1.7rem;
+        border-bottom: #8a6f3f solid 3px;
+        width: 100%;
+        text-align: center; }
+      .galeria .container p {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-align: center; }
+    .galeria .galeria__fotos {
+      justify-self: center;
+      padding-top: 20vh;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 2fr,2fr;
+      grid-template-columns: 2fr,2fr;
+      grid-template-rows: repeat(3, 2fr);
+      grid-gap: 0;
+      grid-template-areas: "img1   img2" "img3   img4" "img5   img6";
+      width: 95vw;
+      height: fit-content; }
+      .galeria .galeria__fotos .sprite-galeria_1 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-area: img1;
+        width: 28vw;
+        height: 34vh;
+        background: url(../images/galeria_1.jpg) no-repeat;
+        background-size: contain;
+        background-position: center center; }
+      .galeria .galeria__fotos .sprite-galeria_2 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        grid-area: img2;
+        width: 28vw;
+        height: 34vh;
+        background: url(../images/galeria_2.jpg) no-repeat;
+        background-size: contain;
+        background-position: center center; }
+      .galeria .galeria__fotos .sprite-galeria_3 {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        grid-area: img3;
+        width: 28vw;
+        height: 34vh;
+        background: url(../images/galeria_3.jpg) no-repeat;
+        background-size: contain;
+        background-position: center center; }
+      .galeria .galeria__fotos .sprite-galeria_4 {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+        grid-area: img4;
+        width: 28vw;
+        height: 34vh;
+        background: url(../images/galeria_4.jpg) no-repeat;
+        background-size: contain;
+        background-position: center center; }
+      .galeria .galeria__fotos .sprite-galeria_5 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        grid-area: img5;
+        width: 28vw;
+        height: 34vh;
+        background: url(../images/galeria_5.jpg) no-repeat;
+        background-size: contain;
+        background-position: center center; }
+      .galeria .galeria__fotos .sprite-galeria_6 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
+        grid-area: img6;
+        width: 28vw;
+        height: 34vh;
+        background: url(../images/galeria_6.jpg) no-repeat;
+        background-size: contain;
+        background-position: center center; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  width: 100%; }
+  body .contenedor {
+    width: 100%;
+    margin: 0;
+    max-width: 1400px; }
+
+.logo {
+  padding-top: 3vh;
+  padding-left: 4vw;
+  height: 29vh; }
+
+.prueba {
+  font-size: 50px;
+  background-image: url(../images/banner4.jpg);
+  height: 200px;
+  width: 200px;
+  background-position: center center; }
