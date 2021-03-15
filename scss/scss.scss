@@ -15,28 +15,17 @@
 }
 
 body{
+    
     width: 100%;
 
-    .contenedor{
-        width: 100%;
-        margin: 0;
-        max-width: 1400px;
-    }
-}
-
-.logo{
-    padding-top: 3vh;
-    padding-left: 4vw;
-    height: 29vh;
-
-}
-
-.prueba{
-
-    font-size: 50px;
     
-    background-image: url(../images/banner4.jpg);
-    height: 200px;
-    width: 200px;
-    background-position: center center;
 }
+
+.flechaSiguiente{
+    transition: 0.7s ease all;
+}
+
+.flechaSiguiente:hover{
+    transform: scalex(1.1);
+}
+

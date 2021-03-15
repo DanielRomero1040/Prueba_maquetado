@@ -7,28 +7,43 @@
     height: 526px;
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
     .container{
-        width: 40vw;
-        height: 45vh;
+        margin-top: 100px;
+        width: 500px;
+        height: 300px;
         background-color: #ffffff;
         margin-right: 0;
         
 
+        .titulo{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        img{
+            align-self: flex-end;
+            margin-right: 0;
+            padding-right: 0;
+            
+        }
+
         h3{
+            align-self: flex-start;
             text-transform: uppercase;
-            margin-left: 5vw;
-            padding-left: 2vw;
+            margin-left: 0;
+            padding-left: 0;
             padding-top: 5vh;
-            margin-bottom: 5vh;
+            margin-bottom: 39px;
             font-family: 'Bebas Neue', cursive;
             letter-spacing: 3px;
             font-size: 1.7rem;            
             color: black;
             border-bottom: #8d3c05 solid 1px;
-            width: 17vw;
+            width: 20vw;
         }
 
         p{
@@ -37,8 +52,19 @@
             font-size: 0.9rem;
             font-weight: 300;
             span{
-                font-weight: 400;
+                font-weight: 500;
             }
+        }
+    }
+
+    .flechaSiguiente{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;        
+        width: 100vw;
+        margin-bottom: 0;
+        img{
+            align-self: center;
         }
     }
 
@@ -53,28 +79,41 @@
     height: 530px;
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
     .container{
-        width: 40vw;
-        height: 48vh;
+        margin-top: 100px;
+        width: 500px;
+        height: 300px;
         background-color: #ffffff;
         margin-left: 0;
         
+        .titulo{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        img{
+            align-self: flex-end;
+            margin-right: 0;
+            padding-right: 0;
+            
+        }
 
         h3{
             text-transform: uppercase;
-            margin-left: 5vw;
-            padding-left: 2vw;
+            margin-left: 0;
+            padding-left: 0;
             padding-top: 9vh;
-            margin-bottom: 5vh;
+            margin-bottom: 39px;
             font-family: 'Bebas Neue', cursive;
             letter-spacing: 3px;
             font-size: 1.7rem;            
             color: black;
             border-bottom: #8d3c05 solid 1px;
-            width: 17vw;
+            width: 20vw;
         }
 
         p{
@@ -82,6 +121,7 @@
             padding-right: 1.5vw;
             font-size: 0.9rem;
             font-weight: 300;
+
             span{
                 font-weight: 500;
             }
@@ -96,14 +136,25 @@
     background: url(../images/banner4.jpg);
     background-size: cover;
     height: 528px;
-    width: 100vw;    
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
     
         .container{
-            width: 42vw;
-            height: 30vh;
+            width: 600px;
+            height: 170px;
             color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
     
             h3{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
                 padding-top: 6vh;
                 text-transform: uppercase;            
                 font-family: 'Bebas Neue', cursive;
@@ -126,14 +177,41 @@
     
     .formulario{
         background-color: rgba(0, 0, 0, 0.5);
-        height: 50vh;
+        height: 320px;
         width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        textarea{
-            width: 40vw;
-            
+        > div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
 
+        textarea{
+            width: 40vw;            
+        }
+
+        .checkPoliticas{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50vw;
+            margin-left: 10vw;
+        }
+        
+        a{
+            color: #9c855d;
+            
+            font-size: 0.9rem;        
+        }
+        a:hover{
+            color: #9c855d;
+           
+            font-size: 0.9rem;        
+        }
+        
         button{
             background-color: #9c855d;
             border: #9c855d;
@@ -148,6 +226,51 @@
         }
     }
    
+    .captcha{
+        height: 0;
+        visibility: hidden;
+        .captcha__imagen{
+            height: 0;
+            margin: 0;
+        }
+    }
 
+    .capt{
+        height: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    #mainCaptcha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        left : 60px;
+        top: 5px;
+        height: 50px;
+        width: 250px;
+        line-height: 50px;
+        
+    }
+    
+    #refresh{        
+        left:230px;
+        width:200px;
+        height:30px;
+        bottom:45px;
+        
+    }
+    
+    #txtInput, #Button1{
+        
+        left:40px;
+        bottom: 40px;
+    }
     
 }

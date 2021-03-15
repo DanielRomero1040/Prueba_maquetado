@@ -16,6 +16,18 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+   
+
+    nav{
+        box-sizing: border-box;
+    }
+    .logo{
+        padding-top: 3vh;
+        padding-left: 4vw;
+        height: 25vh;
+    
+    }
     }
 
     h1{
